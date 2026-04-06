@@ -1,0 +1,61 @@
+{
+  "scraping": {
+    "portal_compras": {
+      "urls_consulta": [
+        "https://www.portaldecompraspublicas.com.br/processos?processo=&unidadeCompradora=&razaoSocial=Feira+de+Santana&situacaoProcesso=&modalidade=&tipoProcesso=&dataPublicacaoInicio=&dataPublicacaoFim="
+      ]
+    },
+    "pncp": {
+      "urls_consulta": [
+        "https://pncp.gov.br/app/editais?q=Feira%20de%20Santana&status=recebendo_proposta&tipo=1"
+      ]
+    }
+  },
+  "webdisplay": {
+    "habilitado": true,
+    "arquivo_json_web": "resultados_web.json",
+    "arquivos_fonte": {
+      "DIARIO": "resultados_diario.json",
+      "PNCP": "resultados_pncp.json",
+      "PDCP": "resultados_pdcp.json"
+    },
+    "ftp": {
+  "habilitado": true,
+  "host": "cp11.ams1.ultacp.com",
+  "usuario": "algxeikj",
+  "senha": "/*-Alisson24!",
+  "diretorio": "public_html/licitacoes",
+  "porta": 21
+   }
+  },
+  "notificacoes": {
+    "habilitado": false,
+    "email": {
+      "smtp_server": "",
+      "smtp_port": 587,
+      "email_from": "",
+      "email_to": [],
+      "username": "",
+      "password": ""
+    },
+    "whatsapp": {
+      "habilitado": false,
+      "numero": "",
+      "mensagem_template": "Nova licitação encontrada: {objeto}"
+    }
+  },
+  "geral": {
+    "intervalo_execucao_minutos": 60,
+    "max_resultados_por_fonte": 100,
+    "codigo_municipio_pncp": 1958,
+    "codigo_uf_portal": 100129,
+    "modalidades": [],
+    "palavras_chave": [
+      "licitação",
+      "pregão",
+      "compra",
+      "aquisição",
+      "contratação"
+    ]
+  }
+}
